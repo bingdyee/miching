@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/styles';
 const useStyles = makeStyles({
   '@global': {
     '*': {
-      color: 'red',
       padding: 0,
       margin: 0,
       border: 0,

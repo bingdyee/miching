@@ -1,0 +1,3 @@
+const FETCH_STOCKDATA = "charts/FETCH_STOCKDATA";
+
+export { FETCH_STOCKDATA };
