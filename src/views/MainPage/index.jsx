@@ -1,6 +1,8 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core';
 import styles from './styles';
+import ButtonGroup from '@material-ui/core/ButtonGroup';
+import Button from '@material-ui/core/Button';
 import { Header, Searcher, MarketInfo, Trending } from './components';
 import { KLine } from '../../components';
 
@@ -114,7 +116,20 @@ class MainPage extends React.PureComponent {
                 </div>
                 <div className={classes.mid}>
                     <div className={classes.kline}>
-                        <KLine data={option}/>
+                        <div className={classes.kHeader}>
+                        <ButtonGroup fullWidth aria-label="Full width outlined button group">
+                            <Button>分时</Button>
+                            <Button>日K</Button>
+                            <Button>周K</Button>
+                            <Button>月K</Button>
+                        </ButtonGroup>
+                        </div>
+                        <div className={classes.kBody}>
+                            <KLine data={option}/>
+                        </div>
+                    </div>
+                    <div className={classes.macd}>
+
                     </div>
                 </div>
             </div>

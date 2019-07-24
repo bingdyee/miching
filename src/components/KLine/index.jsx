@@ -61,13 +61,22 @@ class KLine extends React.PureComponent {
         return {
             backgroundColor: 'rgba(0, 0, 0, 0.1)',
             animation: false,
+            textStyle: {
+                color: '#fff'
+            },
             title: {
                 text: '阿里巴巴[BABA]',
+                textStyle: {
+                    color: '#fff'
+                }
             },
             legend: {
                 bottom: 10,
                 left: 'center',
-                data: ['Dow-Jones index', 'MA5', 'MA10', 'MA20', 'MA30']
+                data: ['Dow-Jones index', 'MA5', 'MA10', 'MA20', 'MA30'],
+                textStyle: {
+                    color: '#fff'
+                }
             },
             tooltip: {
                 trigger: 'axis',
@@ -186,15 +195,15 @@ class KLine extends React.PureComponent {
                 {
                     type: 'inside',
                     xAxisIndex: [0, 1],
-                    start: 98,
-                    end: 100
+                    start: 0,
+                    end: 100,
                 },
                 {
                     show: true,
                     xAxisIndex: [0, 1],
                     type: 'slider',
-                    top: '85%',
-                    start: 98,
+                    top: '83%',
+                    start: 0,
                     end: 100
                 }
             ],
