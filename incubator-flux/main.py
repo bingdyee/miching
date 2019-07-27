@@ -6,8 +6,8 @@ from core.analyzer import *
 from core.utils import list_files
 
 
-root_path = 'docs/Level_2_Data'
-time = '2019-06-10'
+root_path = 'Level_2_Data'
+time = '2019-06-05'
 target = '603767.csv'
 
 Header = [
