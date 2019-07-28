@@ -2,13 +2,10 @@
 import os
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
+import mpl_finance as mpf
 from core.analyzer import *
-from core.utils import list_files
 
-
-root_path = 'Level_2_Data'
-time = '2019-06-05'
-target = '603767.csv'
 
 Header = [
     'TranID', 'Time',	'Price', 'Volume', 
@@ -17,9 +14,25 @@ Header = [
     'BuyOrderPrice'
 ]
 
+
+def list_files(code='000001'):
+    code = '{}.csv'.format(code)
+    paths = []
+    for root, dirs, files in os.walk('Level_2_Data'):
+        if files:
+            paths += [os.path.join(root, f) for f in files if code == f]
+    return paths
+
+
+
+# 时间、开盘价、收盘价、最高价、最低价
+
 def main():
-    df = pd.read_csv(os.path.join(root_path, time, target))
-    print(df)
+    code = '000001'
+    files = list_files(code)
+    for csv_path in files:
+        df = pd.read_csv(csv_path)
+        print(df['TranID'])
 
 
 if __name__ == '__main__':
