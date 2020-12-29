@@ -1,4 +1,5 @@
 # I-Ching
+
 The I Ching, (also known as the Yi Jing) is an ancient Chinese oracle. It is based on a 3000 year old manuscript of Chinese wisdom called "The Book of Changes".
 
 Throughout history, the Book of Changes has been used principally as a divinatory text. It provides deeply insightful spiritual guidance and accurately answers questions about life, love, business, health, self realization and personal issues. The I Ching, or the ancient Chinese Book of Changes is the oldest divination manual still in use today.
@@ -12,12 +13,11 @@ These hexagrams which reflect both ancient Confucianist and Taoist philosophy ea
 In addition to the primary meaning of each hexagram, each I Ching reading also provides more subtle secondary reading pertaining to "changing lines". (Keep reading and we'll discuss the changing lines in more detail below).
 
 # Bagua
-
-- 乾一 111
-- 兑二 110
-- 离三 101
-- 震四 100
-- 巽五 011
-- 坎六 010
-- 艮七 001
-- 坤八 000
+- Qian Yi: 111
+- Dui Er: 110
+- Li San: 101
+- Zhen Si: 100
+- Xun Wu: 011
+- Kan Liu: 010
+- Gen Qi: 001
+- Kun Ba: 000
