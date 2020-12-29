@@ -10,3 +10,14 @@ The core of the I Ching are its 64 hexagrams, each composed of six lines. Each h
 These hexagrams which reflect both ancient Confucianist and Taoist philosophy each carry a primary divinatory meaning which serves as the "answer" to a querent's question. Many students of Western divination systems from tarot cards to astrology enjoy the I Ching's unique Oriental philosophical perspective.
 
 In addition to the primary meaning of each hexagram, each I Ching reading also provides more subtle secondary reading pertaining to "changing lines". (Keep reading and we'll discuss the changing lines in more detail below).
+
+# Bagua
+
+- 乾一 111
+- 兑二 110
+- 离三 101
+- 震四 100
+- 巽五 011
+- 坎六 010
+- 艮七 001
+- 坤八 000

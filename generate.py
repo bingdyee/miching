@@ -114,7 +114,8 @@ def hexagram(ax, top, bottom, xy = (0, 1.), w = 1.1, h = .1, spacing = .1):
 # 乾一、兑二、离三、震四、巽五、坎六、艮七、坤八
 _hexagram = { '000': kun, '001': gen, '010': kan, '011': xun, '100': zhen, '101': li, '110': dui, '111': qian }
 
-def gen():
+
+if __name__ == '__main__':
     # 天道左旋，地道右旋
     for heaven_k, heaven_v in _hexagram.items():
         for earth_k, earth_v in _hexagram.items():
