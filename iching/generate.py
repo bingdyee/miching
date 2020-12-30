@@ -3,6 +3,38 @@ import matplotlib.pyplot as plt
 from PIL import Image, ImageDraw
 
 
+# Year = 1983
+Heavenly = ['甲', '乙', '丙', '丁', '戊', '己', '庚', '辛', '壬', '癸']
+Earthly = ['子', '丑', '寅', '卯', '辰', '巳', '午', '未', '申', '酉', '戌', '亥']
+Symbolic = ['鼠', '牛', '虎', '兔', '龙', '蛇', '马', '羊', '猴', '鸡', '狗', '猪']
+
+# [
+#     '甲子', '乙丑', '丙寅', '丁卯', '戊辰', '己巳', '庚午', '辛未', '壬申', '癸酉',
+#     '甲戌', '乙亥', '丙子', '丁丑', '戊寅', '己卯', '庚辰', '辛巳', '壬午', '癸未',
+#     '甲申', '乙酉', '丙戌', '丁亥', '戊子', '己丑', '庚寅', '辛卯', '壬辰', '癸巳',
+#     '甲午', '乙未', '丙申', '丁酉', '戊戌', '己亥', '庚子', '辛丑', '壬寅', '癸卯',
+#     '甲辰', '乙巳', '丙午', '丁未', '戊申', '己酉', '庚戌', '辛亥', '壬子', '癸丑', 
+#     '甲寅', '乙卯', '丙辰', '丁巳', '戊午', '己未', '庚申', '辛酉', '壬戌', '癸亥'
+# ]
+
+def jiazi_chronology(year):
+    n = year - 3
+    return Heavenly[n % 10 - 1] + Earthly[n % 12 - 1], Symbolic[n % 12 - 1]
+
+
+def jiazi_table():
+    HE = []
+    i = j = 0
+    while True:
+        he = Heavenly[i] + Earthly[j]
+        if he in HE:
+            break
+        HE.append(he)
+        i = 0 if i == 9 else i + 1
+        j = 0 if j == 11 else j + 1
+    return HE
+
+
 # (NO, Lower trigram, Upper trigram)
 Hexagrams = [
     (1, 7, 7), (2, 0, 0), (3, 4, 2), (4, 2, 1), 
@@ -25,7 +57,6 @@ Hexagrams = [
 
 # 天道左旋，地道右旋
 # 乾一、兑二、离三、震四、巽五、坎六、艮七、坤八
-
 # 1-Yang 0-Yin
 # Lift -> Right = Bottom -> Top (Yao)
 # Trigrams_cn = { '乾': '111', '兑': '110', '离': '101', '震': '100', '巽': '011', '坎': '010', '艮': '001', '坤': '000'}
@@ -89,7 +120,9 @@ def iching_hexagram_test(gua = '010101'):
     plt.show()
 
 
+
+
 if __name__ == '__main__':
-    # show_hexagram()
-    iching_hexagram_test()
+    show_hexagram()
+    # iching_hexagram_test()
 
