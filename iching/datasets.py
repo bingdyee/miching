@@ -5,8 +5,9 @@ from PIL import Image, ImageDraw
 
 # 天道左旋，地道右旋
 # 乾一、兑二、离三、震四、巽五、坎六、艮七、坤八
+# 1-Yang 0-Yin
 # Lift -> Right = Bottom -> Top (Yao)
-_hexagram = { '111': 'Qian', '110': 'Dui', '101': 'Li', '100': 'Zhen', '011': 'Xun', '010': 'Kan', '001': 'Gen', '000': 'Kun'}
+Bagua = { '111': 'Qian', '110': 'Dui', '101': 'Li', '100': 'Zhen', '011': 'Xun', '010': 'Kan', '001': 'Gen', '000': 'Kun'}
 
 
 def yang(draw, xy, yang_w, h, color = 0):
@@ -34,6 +35,7 @@ def hexagram(gua, size = (110, 110), yang_c = 0, yin_c = 0):
             continue
         y -= 2 * h
     return im
+
 
 if __name__ == '__main__':
     plt.figure()
