@@ -12,12 +12,16 @@ These hexagrams which reflect both ancient Confucianist and Taoist philosophy ea
 
 In addition to the primary meaning of each hexagram, each I Ching reading also provides more subtle secondary reading pertaining to "changing lines". (Keep reading and we'll discuss the changing lines in more detail below).
 
-# Bagua
-- Qian Yi: 111
-- Dui Er: 110
-- Li San: 101
-- Zhen Si: 100
-- Xun Wu: 011
-- Kan Liu: 010
-- Gen Qi: 001
-- Kun Ba: 000
+# Trigrams
+
+1. Qian(Heaven): 111
+2. Dui(Lake): 110
+3. Li(Fire): 101
+4. Zhen(Thunder): 100
+5. Xun(Wind): 011
+6. Kan(Water): 010
+7. Gen(Mountain): 001
+8. Kun(Earth): 000
+
+
+1,乾,
