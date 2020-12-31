@@ -6,7 +6,7 @@ Throughout history, the Book of Changes has been used principally as a divinator
 
 The core of the I Ching are its 64 hexagrams, each composed of six lines. Each horizontal line has either a broken and unbroken state, allowing for a total of 64 possible combinations.
 
-![- Eight I Ching hexagrams shown. There are 64 in total. -](docs/iching-hexagrams.png)
+![- Eight I Ching hexagrams shown. There are 64 in total. -](docs/hexagram/iching-hexagrams.png)
 
 These hexagrams which reflect both ancient Confucianist and Taoist philosophy each carry a primary divinatory meaning which serves as the "answer" to a querent's question. Many students of Western divination systems from tarot cards to astrology enjoy the I Ching's unique Oriental philosophical perspective.
 
@@ -22,6 +22,3 @@ In addition to the primary meaning of each hexagram, each I Ching reading also p
 6. Kan(Water): 010
 7. Gen(Mountain): 001
 8. Kun(Earth): 000
-
-
-1,乾,
