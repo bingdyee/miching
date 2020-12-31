@@ -1,0 +1,3 @@
+recursive-include iching *.pkl *.py
+include LICENSE
+include README.md
