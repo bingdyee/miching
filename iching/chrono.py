@@ -1,6 +1,7 @@
-"""Chronography - chronology
+"""干支纪法
+Chronography - chronology
 
-甲子纪年：
+甲子周期：
     '甲子', '乙丑', '丙寅', '丁卯', '戊辰', '己巳', '庚午', '辛未', '壬申', '癸酉',
     '甲戌', '乙亥', '丙子', '丁丑', '戊寅', '己卯', '庚辰', '辛巳', '壬午', '癸未',
     '甲申', '乙酉', '丙戌', '丁亥', '戊子', '己丑', '庚寅', '辛卯', '壬辰', '癸巳',
@@ -14,27 +15,39 @@
     申时（下午3至5点）  酉时（下午5至7点）  戌时（晚7至9点）    亥时（晚9至11点）
 """
 
+import datetime
 
-# 最近一次的甲子年
-YEAR = 1984
+
+# 甲子年 甲子日
+CE = datetime.date(1984, 3, 31)
 # 天干
 HEAVENLY = ['甲', '乙', '丙', '丁', '戊', '己', '庚', '辛', '壬', '癸']
 # 地支
 EARTHLY = ['子', '丑', '寅', '卯', '辰', '巳', '午', '未', '申', '酉', '戌', '亥']
-# 十二生肖
-SIGNS = ['鼠', '牛', '虎', '兔', '龙', '蛇', '马', '羊', '猴', '鸡', '狗', '猪']
+
+# 甲子周期
+TERM = [
+    0x03EA, 0x045A, 0x04CA, 0x053A, 0x05A0, 0x0610, 0x0680, 0x06F0, 0x0760, 0x07C6, 
+    0x2776, 0x2B6A, 0x04B6, 0x0526, 0x058C, 0x05FC, 0x066C, 0x06DC, 0x074C, 0x07B2, 
+    0x043A, 0x04AA, 0x2F4A, 0x333E, 0x0578, 0x05E8, 0x0658, 0x06C8, 0x0738, 0x079E, 
+    0x0426, 0x0496, 0x0506, 0x0576, 0x3714, 0x3B08, 0x0644, 0x06B4, 0x0724, 0x078A, 
+    0x0412, 0x0482, 0x04F2, 0x0562, 0x05C8, 0x0638, 0x3EE8, 0x42DC, 0x0710, 0x0776, 
+    0x03FE, 0x046E, 0x04DE, 0x054E, 0x05B4, 0x0624, 0x0694, 0x0704, 0x46BC, 0x4AA6
+]
+
+term = lambda delta: '{:03d}'.format(TERM[delta % 60])
+
+def extract(i):
+    shex = '{:03d}'.format(TERM[i])
+    return HEAVENLY[int(shex[1])] + EARTHLY[int(shex[2:-1])], int(shex[-1])
 
 
 def year(y):
-    n = y - 3
-    return HEAVENLY[n % 10 - 1] + EARTHLY[n % 12 - 1]
+    """元年转干支"""
+    tm = term(abs(y - CE.year))
+    return HEAVENLY[tm % 10] + EARTHLY[tm % 12]
 
-
-def sign(y):
-    return SIGNS[(y - 3) % 12 - 1]
-
-
-def birthdates(birthdate):
+def birthdates(y, m, d, h):
     """获取生辰八字
     
     Args: 
@@ -42,8 +55,19 @@ def birthdates(birthdate):
 
     Returns: 年月日时四柱干支
     """
-    pass
-
+    date = datetime.date(y, m, d)
+    # 年柱
+    year_delta = abs(y - CE.year)
+    year, m_h = extract(year_delta % 60)
+    # 月柱
+    m_h = (m_h + m - 2) % 10
+    m_e = m % 12
+    month = HEAVENLY[m_h] + EARTHLY[m_e]
+    # 日柱
+    day_delta = (date - CE).days
+    day, _ = extract(day_delta % 60)
+    # TODO 年退位、时柱
+    return [year, month, day, '']
 
 def chronologies():
     """返回甲子纪年表"""
