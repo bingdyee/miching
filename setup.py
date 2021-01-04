@@ -18,7 +18,7 @@ setup(
     license="Apache License 2.0",
     description = 'Any vital question you may have, ask it here.',
     long_description = README,
-    keywords = 'I-Ching',
+    keywords = 'I-Ching, classification',
     python_requires = '>=3.6',
     classifiers = [
         "Development Status :: 3 - Alpha",

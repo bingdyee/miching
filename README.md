@@ -17,14 +17,3 @@ In addition to the primary meaning of each hexagram, each I Ching reading also p
 Think in terms of the greater philosophical or spiritual backdrop to a situation, and your readings will be much more effective. While the I-Ching may respond with very direct answers when the future is clear, more often than not, the I-Ching will provide a philosophical framework for you to better understand the situation and predict its outcome.
 
 No one can tell you exactly how to phrase your question. The best approach is to try several kinds of questions and see which I Ching readings yield the best results for you.
-
-# Trigrams
-
-1. Qian(Heaven): 111
-2. Dui(Lake): 110
-3. Li(Fire): 101
-4. Zhen(Thunder): 100
-5. Xun(Wind): 011
-6. Kan(Water): 010
-7. Gen(Mountain): 001
-8. Kun(Earth): 000
