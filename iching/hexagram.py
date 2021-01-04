@@ -8,7 +8,6 @@ from pickles.chings import hexagrams
 
 _TRIGRAMS = ['坤', '艮', '坎', '巽', '震', '离', '兑', '乾']
 
-
 _HEXAGRAM = [
     0X3F, 0X00, 0X22, 0X11, 0X3A, 0X17, 0X10, 0X02, 
     0X3B, 0X37, 0X38, 0X07, 0X2F, 0X3D, 0X08, 0X04, 
@@ -45,16 +44,20 @@ class Hexagram:
 
     @property
     def changes(self):
+        """获取本卦"""
         return _HEXAGRAM.index(self._changes)
 
     @property
     def changed(self):
+        """获取变卦"""
         return _HEXAGRAM.index(self._changed)
 
     def is_changed(self):
+        """是否为变卦"""
         return self._changed is not None
 
     def change(self, change_lines):
+        """变卦"""
         if not change_lines or self.is_changed():
             return
         self._changed = self._changes
@@ -64,22 +67,26 @@ class Hexagram:
     
     @property
     def lower_trigram(self):
+        """获取下卦"""
         return _TRIGRAMS[self._changes >> 3]
     
     @property
     def upper_trigram(self):
+        """获取上卦"""
         return _TRIGRAMS[self._changes & 0x7]
 
     @property
     def change_lines(self):
+        """获取变爻"""
         return self._change_lines
 
     def details(self, i = 0):
+        """获取 本卦-0 / 变卦-1 的基本信息"""
         idx = self._changes if i == 0 else self._changed
         return hexagrams[_HEXAGRAM.index(idx)]
 
     def __str__(self):
-        # # 九-阳 六-阴 初爻 -> 上爻
+        """本卦：九-阳 六-阴 初爻 -> 上爻"""
         sign = []
         nums = ['初', '二', '三', '四', '五', '上']
         for i, num in enumerate(nums):
