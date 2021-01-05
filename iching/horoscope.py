@@ -2,7 +2,7 @@ import argparse
 import numpy as np
 from hexagram import Hexagram, Trigram
 from pickles.chings import iching_txt, horoscopes
-
+from version import __version__
 
 _CHANGES =  [2, 3, 2, 3, 2, 3]
 
@@ -27,17 +27,20 @@ class Prophet:
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description = 'Any vital question you may have, ask it here.')
-    parser.add_argument('topic', type=str, help = 'The topic you are going to ask for')
-    parser.add_argument('-s', "--seed", type=int, help = 'The random seed (not recommended)')
-    parser.add_argument('-v', "--visual", type=bool, default = False, help = 'Visualizing the prophesy process')
-    parser.add_argument('-o', "--output", type=str, help = 'Write to file instead of stdout')
+    parser = argparse.ArgumentParser(description = "Any vital question you may have, ask it here.")
+    group = parser.add_mutually_exclusive_group()
+    group.add_argument('-q', dest= 'question', help = "the question you are going to ask for")
+    group.add_argument('-t', dest= 'topic', help = "the topic about your question")
+    parser.add_argument('-s', dest = 'seed', type=int, help = "the random seed (not recommended)")
+    parser.add_argument('-v', dest = 'visual', type=bool, default = False, help = "visualizing the prophesy process")
+    parser.add_argument('-o', dest = 'output', help = "write to file instead of stdout")
+    parser.add_argument('-V', '--version', action = 'version', version = __version__, help = "show this version message and exit")
     args = parser.parse_args()
-    topic = args.topic
-    # TODO using machine learning to classify topic
-    
     if args.seed:
         np.random.seed(args.seed)
+
+    # TODO question classification
+    # [情感、决策、事业、运势]
     prophet = Prophet()
     _, hexagram,  = prophet.prophesy()
     print('\n************************ 算卦 ************************\n')
