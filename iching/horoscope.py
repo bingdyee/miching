@@ -1,6 +1,6 @@
 
 import numpy as np
-from .hexagram import Hexagram, Trigram
+from iching.hexagram import Hexagram, Trigram
 
 
 _CHANGES =  [2, 3, 2, 3, 2, 3]
