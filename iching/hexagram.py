@@ -3,7 +3,7 @@
 """
 
 from enum import Enum
-from pickles.chings import hexagrams
+from .datasets.chings import hexagrams
 
 
 _TRIGRAMS = ['坤', '艮', '坎', '巽', '震', '离', '兑', '乾']
