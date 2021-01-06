@@ -2,7 +2,7 @@
 
 from PIL import Image, ImageDraw
 import matplotlib.pyplot as plt
-from hexagram import _HEXAGRAM, _TRIGRAMS
+from iching.hexagram import _HEXAGRAM, _TRIGRAMS
 
 
 def yang(draw, xy, yang_w, h, color = 0):
@@ -33,7 +33,7 @@ def iching_hexagram(gua, size = (110, 110), yang_c = 0, yin_c = 0):
     return im
 
 
-def show_hexagram():
+def show_hexagrams():
     plt.rcParams['font.sans-serif'] = ['SimHei']
     plt.rcParams['font.family']='sans-serif'
     plt.figure(figsize = (13, 13))
@@ -48,7 +48,7 @@ def show_hexagram():
     plt.show()
 
 
-def iching_hexagram_test(gua = 0):
+def show_hexagram(gua = 0):
     plt.figure()
     plt.imshow(iching_hexagram(gua, yang_c = 'red', yin_c = 'blue'))
     plt.axis('equal')
