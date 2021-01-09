@@ -1,0 +1,1 @@
+is_chinese = lambda s: all(map(lambda c:'\u4E00' <= c <= '\u9FA5', s))
