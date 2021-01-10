@@ -9,16 +9,16 @@ with open(os.path.join(here, 'README.md')) as rf:
     README = rf.read()
 
 setup(
-    name = 'iching',
+    name = 'miching',
     packages = find_packages(exclude=['test']),
     version = __version__,
     author = 'Noa Swartz',
     author_email="fetaxyu@gmail.com",
-    url = "https://github.com/vbintx/iching",
+    url = "https://github.com/vbintx/miching",
     license="Apache License 2.0",
     description = 'Any vital question you may have, ask it here.',
     long_description = README,
-    keywords = 'I-Ching, classification',
+    keywords = 'Machine I-Ching, classification',
     python_requires = '>=3.6',
     classifiers = [
         "Development Status :: 3 - Alpha",

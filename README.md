@@ -1,4 +1,4 @@
-# I-Ching
+# Machine I-Ching
 
 The I Ching, (also known as the Yi Jing) is an ancient Chinese oracle. It is based on a 3000 year old manuscript of Chinese wisdom called "The Book of Changes".
 
