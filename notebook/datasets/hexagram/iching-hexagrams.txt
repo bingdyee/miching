@@ -1,0 +1,64 @@
+1,111111,乾,Creativity(heaven),乾为天,乾上乾下
+2,000000,坤,The Receptive,坤为地,坤上坤下
+3,100010,屯,Trouble At The Start,水雷屯,坎上震下
+4,010001,蒙,Youthful Inexperience,山水蒙,艮上坎下
+5,111010,需,Patience,水天需,坎上乾下
+6,010111,讼,Conflict,天水讼,乾上坎下
+7,010000,师,The Army,地水师,坤上坎下
+8,000010,比,Union,水地比,坎上坤下
+9,111011,小畜,Wind And Clouds,风天小畜,巽上乾下
+10,110111,履,Steps,天泽履,乾上兑下
+11,111000,泰,Peace,天地泰,坤上乾下
+12,000111,否,Stagnation,地天否,乾上坤下
+13,101111,同人,Fellowship,天火同人,乾上离下
+14,111101,大有,Plenty,火天大有,离上乾下
+15,001000,谦,Modesty And Progress,地山谦,坤上艮下
+16,000100,豫,Approval,雷地豫,震上坤下
+17,100110,随,Following,泽雷随,兑上震下
+18,011001,蛊,Ruin,山风蛊,艮上巽下
+19,110000,临,Approaching,地泽临,坤上兑下
+20,000011,观,Meditation,风地观,巽上坤下
+21,100101,噬嗑,Jaws,火雷噬嗑,离上震下
+22,101001,贲,Grace,山火贲,艮上离下
+23,000001,剥,Splitting Apart,山地剥,艮上坤下
+24,100000,复,The Turning Point,地雷复,坤上震下
+25,100111,无妄,Innocence,天雷无妄,乾上震下
+26,111001,大畜,Great Achievements,山天大畜,艮上乾下
+27,100001,颐,Nourishment,山雷颐,艮上震下
+28,011110,大过,Test Of Faith,泽风大过,兑上巽下
+29,010010,坎,Pitfalls,坎为水,坎上坎下
+30,101101,离,Luminosity,离为火,离上离下
+31,001110,咸,Influence,泽山咸,兑上艮下
+32,011100,恒,Permanence,雷风恒,震上巽下
+33,001111,遁,Retreat,天山遁,乾上艮下
+34,111100,大壮,Great Power,雷天大壮,震上乾下
+35,000101,晋,Progress,火地晋,离上坤下
+36,101000,明夷,Darkening Of The Light,地火明夷,坤上离下
+37,101011,家人,Family,风火家人,巽上离下
+38,110101,睽,Opposition,火泽睽,离上兑下
+39,001010,蹇,Obstruction,水山蹇,坎上艮下
+40,010100,解,Deliverance,雷水解,震上坎下
+41,110001,损,Decrease,山泽损,艮上兑下
+42,100011,益,Increase,风雷益,巽上震下
+43,111110,夬,Breaking Through,泽天夬,兑上乾下
+44,011111,姤,Coming Together,天风姤,乾上巽下
+45,000110,萃,Gathering Together,泽地萃,兑上坤下
+46,011000,升,Rising Up,地风升,坤上巽下
+47,010110,困,Exhaustion,泽水困,兑上坎下
+48,011010,井,The Well,水风井,坎上巽下
+49,101110,革,Transformation,泽火革,兑上离下
+50,011101,鼎,The Cauldron,火风鼎,离上巽下
+51,100100,震,A Powerful Jolt,震为雷,震上震下
+52,001001,艮,Staying Still,艮为山,艮上艮下
+53,001011,渐,Gradual Progress,风山渐,巽上艮下
+54,110100,归妹,Disaffection,雷泽归妹,震上兑下
+55,101100,丰,Abundance And Fullness,雷火丰,震上离下
+56,001101,旅,Traveling,火山旅,离上艮下
+57,011011,巽,Spreading,巽为风,巽上巽下
+58,110110,兑,Joyousness,兑为泽,兑上兑下
+59,010011,涣,Dispersing,风水涣,巽上坎下
+60,110010,节,Limitation,水泽节,坎上兑下
+61,110011,中孚,Inner Truth,风泽中孚,巽上兑下
+62,001100,小过,Smallness,雷山小过,震上艮下
+63,101010,既济,Completion,水火既济,坎上离下
+64,010101,未济,Before Completion,火水未济,离上坎下
