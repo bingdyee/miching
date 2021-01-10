@@ -1,6 +1,6 @@
 import argparse
-from iching.horoscope import Prophet
-from iching.version import __version__
+from miching.horoscope import Prophet
+from miching.version import __version__
 
 
 if __name__ == '__main__':
@@ -9,16 +9,13 @@ if __name__ == '__main__':
     group.add_argument('-q', dest= 'question', help = "the question you are going to ask for")
     group.add_argument('-t', dest= 'topic', help = "the topic about your question")
     parser.add_argument('-s', dest = 'seed', type=int, help = "the random seed (not recommended)")
-    parser.add_argument('-v', dest = 'visual', type=bool, default = False, help = "visualizing the prophesy process")
+    parser.add_argument('-v', dest = 'visual', action="store_true", help = "visualizing the prophesy process")
     parser.add_argument('-o', dest = 'output', help = "write to file instead of stdout")
     parser.add_argument('-V', '--version', action = 'version', version = __version__, help = "show this version message and exit")
     args = parser.parse_args()
-    # TODO question classification
-    # [情感、决策、事业、运势]
-    topic = args.topic
-    prophet = Prophet(event = topic, seed = args.seed)
+    # 易经预测
+    prophet = Prophet(event = args.topic, seed = args.seed)
     prophet.prophesy()
     prophet.explain()
-    if args.visual:
-        prophet.visualize()
+    if args.visual: prophet.visualize()
     

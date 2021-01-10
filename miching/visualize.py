@@ -50,7 +50,7 @@ def show_hexagrams():
 
 def show_hexagram(gua = 0):
     plt.figure()
-    plt.imshow(iching_hexagram(gua, yang_c = 'red', yin_c = 'blue'))
+    plt.imshow(iching_hexagram(gua, yang_c = '#0D5AB4', yin_c = '#DA251C'))
     plt.axis('equal')
     plt.axis('off')
     plt.tight_layout()
