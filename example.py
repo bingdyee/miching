@@ -3,7 +3,7 @@ from miching.horoscope import Prophet
 from miching.version import __version__
 
 
-if __name__ == '__main__':
+def usage():
     parser = argparse.ArgumentParser(description = "Any vital question you may have, ask it here.")
     group = parser.add_mutually_exclusive_group()
     group.add_argument('-q', dest= 'question', help = "the question you are going to ask for")
@@ -18,4 +18,8 @@ if __name__ == '__main__':
     prophet.prophesy()
     prophet.explain()
     if args.visual: prophet.visualize()
+
+
+if __name__ == '__main__':
+    usage()
     
