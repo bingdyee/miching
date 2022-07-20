@@ -34,8 +34,9 @@ def iching_hexagram(gua, size = (110, 110), yang_c = 0, yin_c = 0):
 
 
 def show_hexagrams():
-    plt.rcParams['font.sans-serif'] = ['SimHei']
-    plt.rcParams['font.family']='sans-serif'
+    plt.rcParams['font.family'] = 'sans-serif'
+    plt.rcParams['font.sans-serif'] = ['SimHei', 'Heiti TC']
+    plt.rcParams['axes.unicode_minus'] = False
     plt.figure(figsize = (13, 13))
     for i, hexagram in enumerate(_HEXAGRAM):
         plt.subplot(8, 8, i + 1)

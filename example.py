@@ -1,6 +1,10 @@
 import argparse
+
+from matplotlib import font_manager
 from miching.horoscope import Prophet
 from miching.version import __version__
+from miching.visualize import show_hexagrams
+from miching.sexagenary import sizhu
 
 
 def usage():
@@ -22,4 +26,4 @@ def usage():
 
 if __name__ == '__main__':
     usage()
-    
+    # print(sizhu(1991, 1, 15, 12))

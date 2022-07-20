@@ -12,9 +12,9 @@ setup(
     name = 'miching',
     packages = find_packages(exclude=['test']),
     version = __version__,
-    author = 'Noa Swartz',
-    author_email="fetaxyu@gmail.com",
-    url = "https://github.com/vbintx/miching",
+    author = 'Bing D. Yee',
+    author_email="bingdyee@gmail.com",
+    url = "https://github.com/bingdyee/miching",
     license="Apache License 2.0",
     description = 'Any vital question you may have, ask it here.',
     long_description = README,
@@ -24,9 +24,9 @@ setup(
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Public",
         "License :: OSI Approved :: Apache Software License",
-        "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
         "Topic :: Software Development :: Libraries :: Application"
     ]
 )
